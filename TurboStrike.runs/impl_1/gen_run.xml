@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1712048979">
+  <File Type="BITSTR-BMM" Name="turbostrike_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="turbostrike_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="turbostrike_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="turbostrike_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="turbostrike.tcl"/>
+  <File Type="OPT-TIMING" Name="turbostrike_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="turbostrike_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="turbostrike_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="turbostrike_reports.tcl"/>
+  <File Type="OPT-DRC" Name="turbostrike_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="turbostrike.hwdef"/>
+  <File Type="PWROPT-DCP" Name="turbostrike_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="turbostrike_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="turbostrike_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="turbostrike_placed.dcp"/>
+  <File Type="PLACE-IO" Name="turbostrike_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="turbostrike_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="turbostrike_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="turbostrike_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="turbostrike_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="turbostrike_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="turbostrike_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="turbostrike.bgn"/>
+  <File Type="PLACE-TIMING" Name="turbostrike_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="turbostrike_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="turbostrike.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="turbostrike_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="turbostrike_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="turbostrike_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="turbostrike.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="turbostrike_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="turbostrike_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="turbostrike_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="turbostrike_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="turbostrike_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="turbostrike_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="turbostrike.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="turbostrike_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="turbostrike.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="turbostrike_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="turbostrike_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="turbostrike.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="turbostrike_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="turbostrike_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="turbostrike_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="turbostrike_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="turbostrike_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="turbostrike_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="turbostrike_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="turbostrike_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="turbostrike_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="turbostrike_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="turbostrike_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="turbostrike_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="turbostrike_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="turbostrike_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="turbostrike_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="turbostrike_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="turbostrike_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="turbostrike_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="turbostrike_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="turbostrike.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="turbostrike_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="turbostrike.rbt"/>
+  <File Type="BITSTR-NKY" Name="turbostrike.nky"/>
+  <File Type="BG-DRC" Name="turbostrike.drc"/>
+  <File Type="RDI-RDI" Name="turbostrike.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE2026/Team_Project/Team_Project.srcs/sources_1/imports/uart/uart_rx.v"/>
+        <Attr Name="ImportTime" Val="1711697720"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uart/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EE2026/Team_Project/Team_Project.srcs/sources_1/imports/uart/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1711680356"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/turbostrike.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/TurboStrike-FPGA-Project/0.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/0.mem"/>
+        <Attr Name="ImportTime" Val="1712030424"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="turbostrike"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/my_basys3_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
