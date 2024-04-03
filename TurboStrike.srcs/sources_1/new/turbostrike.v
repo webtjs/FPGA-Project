@@ -20,110 +20,73 @@
 //////////////////////////////////////////////////////////////////////////////////
 module turbostrike(
     input clk,
-    input btnU,
-    input btnD,
-    input btnL,
-    input btnR,
-    input btnC,
-    input sw0,
-    input JA1,
-    output JA5,
+    input [4:0] sw,
+    input [2:0] RX,
+    output reg [2:0] TX = 0,
     output reg [4:0] led = 0
 );
 
-    localparam UP = 8'h55;
-    localparam DOWN = 8'h44;
-    localparam LEFT = 8'h4C;
-    localparam RIGHT = 8'h32;
-    localparam CENTER = 8'h58;
+    localparam UP = 3'b001;     // 1 in binary
+    localparam DOWN = 3'b010;   // 2 in binary
+    localparam LEFT = 3'b011;   // 3 in binary
+    localparam RIGHT = 3'b100;  // 4 in binary
+    localparam CENTER = 3'b101; // 5 in binary
+
+    localparam BLUE = 3'b001;     // 1 in binary
+    localparam GREEN = 3'b010;   // 2 in binary
+    localparam RED = 3'b011;   // 3 in binary
+    localparam GREY = 3'b100;  // 4 in binary
+
+
+
+    reg [2:0] player1 = 0;
+    reg [2:0] player2 = 0;
     
-    parameter CLK_HZ = 100_000_000;
-    parameter BIT_RATE =   9600;
-    parameter PAYLOAD_BITS = 8;
-
-    wire [7:0]  uart_rx_data;
-    wire        uart_rx_valid;
-    wire        uart_rx_break;
-
-    wire        uart_tx_busy;
-    reg [7:0]  uart_tx_data = 0;
-    reg        uart_tx_en = 0;
-
-
-    // UART RX
-    uart_rx #(.BIT_RATE(BIT_RATE), .PAYLOAD_BITS(PAYLOAD_BITS), .CLK_HZ  (CLK_HZ  )) i_uart_rx(
-    .clk          (clk          ), // Top level system clock input.
-    .resetn       (sw0         ), // Asynchronous active low reset.
-    .uart_rxd     (JA1     ), // UART Recieve pin.
-    .uart_rx_en   (1'b1         ), // Recieve enable
-    .uart_rx_break(uart_rx_break), // Did we get a BREAK message?
-    .uart_rx_valid(uart_rx_valid), // Valid data recieved and available.
-    .uart_rx_data (uart_rx_data )  // The recieved data.
-    );
-
-    //
-    // UART Transmitter module.
-    //
-    uart_tx #(.BIT_RATE(BIT_RATE), .PAYLOAD_BITS(PAYLOAD_BITS), .CLK_HZ  (CLK_HZ  )) i_uart_tx(
-    .clk          (clk          ),
-    .resetn       (sw0         ),
-    .uart_txd     (JA5     ),
-    .uart_tx_en   (uart_tx_en   ),
-    .uart_tx_busy (uart_tx_busy ),
-    .uart_tx_data (uart_tx_data ) 
-    );
-
     //control block for TX
     always @(posedge clk) begin
-        if (sw0) begin
-            uart_tx_data <= 0;
-            uart_tx_en <= 0;
+        if (sw[0]) begin
+            TX <= 0;
         end
-        else if (btnU) begin
-            uart_tx_data <= UP;
-            uart_tx_en <= 1;
+        else if (sw[1]) begin
+            TX <= UP;
         end
-        else if (btnD) begin
-            uart_tx_data <= DOWN;
-            uart_tx_en <= 1;
+        else if (sw[2]) begin
+            TX <= DOWN;
         end
-        else if (btnL) begin
-            uart_tx_data <= LEFT;
-            uart_tx_en <= 1;
+        else if (sw[3]) begin
+            TX <= LEFT;
         end
-        else if (btnR) begin
-            uart_tx_data <= RIGHT;
-            uart_tx_en <= 1;
+        else if (sw[4]) begin
+            TX <= RIGHT;
         end
-        else if (btnC) begin
-            uart_tx_data <= CENTER;
-            uart_tx_en <= 1;
+        else if (sw[5]) begin
+            TX <= CENTER;
         end
         else begin
-            uart_tx_data <= 0;
-            uart_tx_en <= 0;
+            TX <= 0;
         end
     end
 
     //control block for RX
     always @(posedge clk) begin
-        if (uart_rx_data == UP) begin
+        if (RX == UP) begin
             led <= 5'b00001;
         end
-        else if (uart_rx_data == DOWN) begin
+        else if (RX == DOWN) begin
             led <= 5'b00010;
         end
-        else if (uart_rx_data == LEFT) begin
+        else if (RX == LEFT) begin
             led <= 5'b00100;
         end
-        else if (uart_rx_data == RIGHT) begin
+        else if (RX == RIGHT) begin
             led <= 5'b01000;
         end
-        else if (uart_rx_data == CENTER) begin
+        else if (RX == CENTER) begin
             led <= 5'b10000;
         end
         else begin
-            led <= 5'b00000;
+            led <= 0;
         end
     end
+
 endmodule

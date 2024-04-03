@@ -31,11 +31,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/Desktop/TurboStrike-FPGA-Project/TurboStrike.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_mem D:/Desktop/TurboStrike-FPGA-Project/TurboStrike.srcs/sources_1/imports/TurboStrike-FPGA-Project/0.mem
-read_verilog -library xil_defaultlib {
-  D:/Desktop/TurboStrike-FPGA-Project/TurboStrike.srcs/sources_1/imports/uart/uart_rx.v
-  D:/Desktop/TurboStrike-FPGA-Project/TurboStrike.srcs/sources_1/imports/uart/uart_tx.v
-  D:/Desktop/TurboStrike-FPGA-Project/TurboStrike.srcs/sources_1/new/turbostrike.v
-}
+read_verilog -library xil_defaultlib D:/Desktop/TurboStrike-FPGA-Project/TurboStrike.srcs/sources_1/new/turbostrike.v
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
