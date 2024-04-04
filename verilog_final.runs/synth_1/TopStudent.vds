@@ -1,0 +1,974 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr  4 16:05:15 2024
+# Process ID: 26884
+# Current directory: D:/Desktop/verilog_final/verilog_final.runs/synth_1
+# Command line: vivado.exe -log TopStudent.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopStudent.tcl
+# Log file: D:/Desktop/verilog_final/verilog_final.runs/synth_1/TopStudent.vds
+# Journal file: D:/Desktop/verilog_final/verilog_final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2018.2/scripts/Vivado_init.tcl'
+source TopStudent.tcl -notrace
+Command: synth_design -top TopStudent -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11088 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.512 ; gain = 100.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopStudent' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:23]
+	Parameter UP bound to: 3'b001 
+	Parameter DOWN bound to: 3'b010 
+	Parameter LEFT bound to: 3'b011 
+	Parameter RIGHT bound to: 3'b100 
+	Parameter CENTER bound to: 3'b101 
+	Parameter BLUE bound to: 3'b001 
+	Parameter GREEN bound to: 3'b010 
+	Parameter RED bound to: 3'b011 
+	Parameter GREY bound to: 3'b100 
+	Parameter START bound to: 4'b0000 
+	Parameter SELECT bound to: 4'b0001 
+	Parameter BACKGROUND bound to: 4'b0010 
+	Parameter ANIMATION bound to: 4'b0011 
+	Parameter GOAL_ANIMATION bound to: 4'b0100 
+INFO: [Synth 8-3876] $readmem data file 'test.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:114]
+INFO: [Synth 8-3876] $readmem data file 'start_page.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:115]
+INFO: [Synth 8-3876] $readmem data file 'background_mem.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:116]
+INFO: [Synth 8-3876] $readmem data file 'ani0.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:117]
+INFO: [Synth 8-3876] $readmem data file 'ani1.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:118]
+INFO: [Synth 8-3876] $readmem data file 'ani2.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:119]
+INFO: [Synth 8-3876] $readmem data file 'ani3.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:120]
+INFO: [Synth 8-3876] $readmem data file 'ani4.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:121]
+INFO: [Synth 8-3876] $readmem data file 'ani5.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:122]
+INFO: [Synth 8-6157] synthesizing module 'debouncer_k' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/debouncer_k.v:23]
+	Parameter clock_freq bound to: 100000000 - type: integer 
+	Parameter debounce_time bound to: 1000 - type: integer 
+	Parameter initial_value bound to: 1'b0 
+	Parameter timerlim bound to: 100000 - type: integer 
+	Parameter s_initial bound to: 3'b000 
+	Parameter s_zero bound to: 3'b001 
+	Parameter s_zero_to_one bound to: 3'b010 
+	Parameter s_one bound to: 3'b011 
+	Parameter s_one_to_zero bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/debouncer_k.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer_k' (1#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/debouncer_k.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Main' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/Main.v:23]
+INFO: [Synth 8-3876] $readmem data file 'background_mem.mem' is read successfully [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/Main.v:27]
+INFO: [Synth 8-6157] synthesizing module 'slow_clock' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/slow_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slow_clock' (2#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/slow_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/Desktop/Oled_Display_1.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/Desktop/Oled_Display_1.v:123]
+INFO: [Synth 8-226] default block is never used [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/Desktop/Oled_Display_1.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/Desktop/Oled_Display_1.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (3#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/Desktop/Oled_Display_1.v:36]
+INFO: [Synth 8-6157] synthesizing module 'get_coordinates' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/get_coordinates.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_coordinates' (4#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/get_coordinates.v:23]
+INFO: [Synth 8-6157] synthesizing module 'centre_button_detector' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/centre_button_detector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'centre_button_detector' (5#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/centre_button_detector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button_press' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/button_press.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'button_press' (6#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/button_press.v:23]
+INFO: [Synth 8-6157] synthesizing module 'movement_state' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/movement_state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'movement_state' (7#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/movement_state.v:23]
+INFO: [Synth 8-6157] synthesizing module 'update_square_pos' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/update_square_pos.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'update_square_pos' (8#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/update_square_pos.v:23]
+INFO: [Synth 8-6157] synthesizing module 'p2_pos' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/p2_pos.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'p2_pos' (9#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/p2_pos.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (10#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/Main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'my_clock' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/my_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_clock' (11#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/my_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/debouncer.v:23]
+	Parameter counter_ticks bound to: 20000000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element COUNTER_RELEASE_reg was removed.  [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/debouncer.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (12#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'placement' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/placement.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'placement' (13#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/placement.v:23]
+INFO: [Synth 8-6157] synthesizing module 'stateSet' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/stateSet.v:23]
+	Parameter START bound to: 5'b00000 
+	Parameter SELECT bound to: 5'b00001 
+	Parameter BACKGROUND bound to: 5'b00010 
+	Parameter ANIMATION bound to: 5'b00011 
+	Parameter GOAL_ANIMATION bound to: 5'b00100 
+INFO: [Synth 8-6155] done synthesizing module 'stateSet' (14#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/stateSet.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_coord' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/get_coord.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_coord' (15#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/get_coord.v:23]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:305]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:313]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:321]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:329]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:332]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:335]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:339]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:344]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:347]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:350]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:353]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:356]
+WARNING: [Synth 8-6090] variable 'oled_data' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:359]
+WARNING: [Synth 8-6014] Unused sequential element player1_reg was removed.  [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:203]
+WARNING: [Synth 8-6014] Unused sequential element player2_reg was removed.  [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:204]
+INFO: [Synth 8-6155] done synthesizing module 'TopStudent' (16#1) [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/TopStudent.v:23]
+WARNING: [Synth 8-3331] design movement_state has unconnected port btnC
+WARNING: [Synth 8-3331] design Main has unconnected port JC[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 455.043 ; gain = 198.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 455.043 ; gain = 198.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 455.043 ; gain = 198.531
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Desktop/verilog_final/verilog_final.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/Desktop/verilog_final/verilog_final.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/verilog_final/verilog_final.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopStudent_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopStudent_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 792.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 792.234 ; gain = 535.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 792.234 ; gain = 535.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 792.234 ; gain = 535.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer_k'
+INFO: [Synth 8-5546] ROM "timer_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "btn_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "timer_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/update_square_pos.v:28]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/update_square_pos.v:36]
+INFO: [Synth 8-5546] ROM "new_xstart0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "new_xstart0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "new_ystart0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/p2_pos.v:28]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/p2_pos.v:36]
+INFO: [Synth 8-5546] ROM "new_xstart0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "new_xstart0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "new_ystart0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "s_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'move_time_reg' into 'debounced_signal_reg' [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/debouncer.v:40]
+WARNING: [Synth 8-6014] Unused sequential element move_time_reg was removed.  [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/new/debouncer.v:40]
+INFO: [Synth 8-5544] ROM "stage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               s_initial |                              000 |                              000
+                  s_zero |                              001 |                              001
+           s_zero_to_one |                              010 |                              010
+                   s_one |                              011 |                              011
+           s_one_to_zero |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debouncer_k'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 792.234 ; gain = 535.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |TopStudent__GB0 |           1|     24560|
+|2     |TopStudent__GB1 |           1|     16353|
+|3     |TopStudent__GB2 |           1|     13603|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 9     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               40 Bit    Registers := 2     
+	               17 Bit    Registers := 9     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 6     
+	  32 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     21 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 7     
+	   4 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 7     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 2     
+	  32 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	  32 Input      5 Bit        Muxes := 2     
+	   6 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 35    
+	   5 Input      3 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 58    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 25    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopStudent 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+Module my_clock__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module my_clock__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module stateSet 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module placement 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   6 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module debouncer__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module debouncer__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module my_clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module slow_clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module centre_button_detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module button_press__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module button_press 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module movement_state__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module movement_state 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module update_square_pos 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module p2_pos 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+Module debouncer_k__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 5     
+Module debouncer_k__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 5     
+Module debouncer_k__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 5     
+Module debouncer_k__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 5     
+Module debouncer_k 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "clock_25m/s_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/s_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element clock_45hz/slow_clock_reg was removed.  [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/slow_clock.v:28]
+WARNING: [Synth 8-6014] Unused sequential element clock_15hz/slow_clock_reg was removed.  [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/slow_clock.v:28]
+WARNING: [Synth 8-6014] Unused sequential element clock_3hz/slow_clock_reg was removed.  [D:/Desktop/verilog_final/verilog_final.srcs/sources_1/imports/new/slow_clock.v:28]
+INFO: [Synth 8-5545] ROM "clock_6p25m/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_25m/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_1k/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_30hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_25m/s_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/s_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "new_ystart0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "new_ystart0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clock_25m/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_6p25m/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_1k/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clock_30hz/slow_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_1000hz_clk/s_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "debouncer_btnD/timer_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debouncer_btnL/timer_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debouncer_btnR/timer_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debouncer_btnU/timer_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debouncer_btnC/timer_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'i_1/an_reg[0]' (FDRE) to 'i_1/seg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/an_reg[1]' (FDRE) to 'i_1/seg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/an_reg[2]' (FDRE) to 'i_1/seg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/an_reg[3]' (FDRE) to 'i_1/seg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/seg_reg[0]' (FDRE) to 'i_1/seg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/seg_reg[1]' (FDRE) to 'i_1/seg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/seg_reg[2]' (FDRE) to 'i_1/seg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/seg_reg[3]' (FDRE) to 'i_1/seg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/seg_reg[4]' (FDRE) to 'i_1/seg_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\seg_reg[6] )
+INFO: [Synth 8-3886] merging instance 'i_2/my_placement/placement_reg[2]' (FDRE) to 'i_2/my_placement/placement_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_2/my_placement/placement_reg[4]' (FDRE) to 'i_2/my_placement/placement_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\my_placement/placement_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[16]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[15]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[14]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[13]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[12]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[11]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[10]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[9]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[8]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[7]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[6]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[5]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[4]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/counter_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (ub2/pb_pressed_reg) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (inAir2_reg) is unused and will be removed from module Main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:56 ; elapsed = 00:03:03 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Main        | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|TopStudent  | p_0_out    | 8192x16       | LUT            | 
+|Main        | p_0_out    | 8192x16       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |TopStudent__GB0 |           1|     18450|
+|2     |TopStudent__GB1 |           1|      8622|
+|3     |TopStudent__GB2 |           1|      6072|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:01 ; elapsed = 00:03:09 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:02 ; elapsed = 00:03:10 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |TopStudent__GB0 |           1|     18450|
+|2     |TopStudent__GB1 |           1|      8622|
+|3     |TopStudent__GB2 |           1|      6109|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:05 ; elapsed = 00:03:14 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:07 ; elapsed = 00:03:15 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:07 ; elapsed = 00:03:16 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:08 ; elapsed = 00:03:16 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:08 ; elapsed = 00:03:16 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:17 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:08 ; elapsed = 00:03:17 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     6|
+|2     |CARRY4 |   211|
+|3     |LUT1   |    46|
+|4     |LUT2   |   540|
+|5     |LUT3   |   182|
+|6     |LUT4   |   232|
+|7     |LUT5   |  1135|
+|8     |LUT6   | 14033|
+|9     |MUXF7  |  6825|
+|10    |MUXF8  |  2074|
+|11    |FDE_1  |    64|
+|12    |FDRE   |   758|
+|13    |FDSE   |    44|
+|14    |IBUF   |    10|
+|15    |OBUF   |    22|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------------+------+
+|      |Instance             |Module                 |Cells |
++------+---------------------+-----------------------+------+
+|1     |top                  |                       | 26182|
+|2     |  clock_25m          |my_clock               |    50|
+|3     |  clock_6p25m        |my_clock_0             |    51|
+|4     |  debouncer_btnC     |debouncer_k            |    55|
+|5     |  debouncer_btnD     |debouncer_k_1          |    56|
+|6     |  debouncer_btnL     |debouncer_k_2          |    55|
+|7     |  debouncer_btnR     |debouncer_k_3          |    57|
+|8     |  debouncer_btnU     |debouncer_k_4          |    55|
+|9     |  engine             |Main                   |  3764|
+|10    |    cbd              |centre_button_detector |     3|
+|11    |    clock_1k         |slow_clock             |    54|
+|12    |    clock_25m        |slow_clock_8           |    50|
+|13    |    clock_30hz       |slow_clock_9           |    55|
+|14    |    clock_6p25m      |slow_clock_10          |    51|
+|15    |    coordinates      |get_coordinates        |    66|
+|16    |    p1_pos_30hz      |update_square_pos      |    90|
+|17    |    p2               |movement_state         |     8|
+|18    |    p2_pos_30hz      |p2_pos                 |    88|
+|19    |    sq_move_state    |movement_state_11      |     6|
+|20    |    ub1              |button_press           |    37|
+|21    |    unit_oled        |Oled_Display_12        |  3239|
+|22    |  my_1000hz_clk      |my_clock_5             |    55|
+|23    |  my_centre_debounce |debouncer              |    49|
+|24    |  my_left_debounce   |debouncer_6            |    51|
+|25    |  my_placement       |placement              |   107|
+|26    |  my_right_debounce  |debouncer_7            |    50|
+|27    |  my_state           |stateSet               |   177|
+|28    |  unit_oled          |Oled_Display           | 21425|
++------+---------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:08 ; elapsed = 00:03:17 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:01 ; elapsed = 00:03:10 . Memory (MB): peak = 1511.254 ; gain = 917.551
+Synthesis Optimization Complete : Time (s): cpu = 00:03:08 ; elapsed = 00:03:17 . Memory (MB): peak = 1511.254 ; gain = 1254.742
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9184 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'TopStudent' is not ideal for floorplanning, since the cellview 'Oled_Display' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:12 ; elapsed = 00:03:22 . Memory (MB): peak = 1511.254 ; gain = 1267.781
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Desktop/verilog_final/verilog_final.runs/synth_1/TopStudent.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopStudent_utilization_synth.rpt -pb TopStudent_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1511.254 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  4 16:08:42 2024...
